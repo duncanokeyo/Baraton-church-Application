@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">BUC</string>
+    <string name="authority">com.dans.app.buc</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="quarterlies">Quarterlies</string>
+    <string name="lessons">Lessons</string>
+    <string name="dummy_date">Saturday 30 September</string>
+    <string name="date_dummy_data">Easy Reading. 1Q 2017</string>
+    <string name="quarterly_description_dummy_data">Many people struggle with the age-old question, If God exists, and is so good, so loving, and so powerful, why so much suffering? Hence, this quarter’s study: the book of Job</string>
+    <string name="title_dummy_data">Salvation by Faith Alone. Book of Romans</string>
+    <string name="no_quarterlies">No quarterlies</string>
+    <string name="title_activity_lessons">Lessons</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_read">CurrentRead</string>
+    <string name="quarterly_description">Quarterly description</string>
+    <string name="lessons_fetch_error">Error fetching lessons</string>
+    <string name="refresh">Refresh</string>
+    <string name="quarterlies_fetch_error">Error fetching quarterlies</string>
+    <string name="search">Search</string>
+    <string name="search_lessons">Enter lesson title</string>
+    <string name="no_lessons">No lessons</string>
+    <string name="retry">Retry</string>
+    <string name="no_days">No daily read</string>
+    <string name="days_fetch_error">Error fetching daily read</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Share</string>
+    <string name="jump_to_day">Jump to specific day</string>
+    <string name="select_day">Select Day</string>
+    <string name="close">Close</string>
+    <string name="add_to_favourites">Add to favourites</string>
+    <string name="added_to_favourites">Added to favourites</string>
+    <string name="error_adding_to_favourites">Error adding to favourites</string>
+    <string name="references">References</string>
+    <string name="my_requests">My requests</string>
+    <string name="sermon">Sermons</string>
+    <string name="announcements">Announcements</string>
+    <string name="home">Home</string>
+    <string name="about_us">About us</string>
+    <string name="settings">Settings</string>
+    <string name="useful_links">Useful links</string>
+    <string name="logout">Logout</string>
+    <string name="pick_request">Pick request type</string>
+
+    <string name="chaplain_phone_number">0721712618</string>
+    <string name="chaplain_email_address">Chaplaincy@ueab.ac.ke</string>
+    <string name="chaplain">
+           <![CDATA[
+            <p>
+             <strong>CHAPLAIN</strong><br>
+             <p>
+               Dr Rei T.kesis<br>
+               </p>
+            </p> ]]>
+    </string>
+    <string name="assistants">
+           <![CDATA[
+            <p>
+             <strong>ASSISTANTS</strong><br>
+             <p>
+              Pr. Jeremiah Kipkemboi<br>
+              </p>
+            </p> ]]>
+    </string>
+    <string name="contacts">
+           <![CDATA[
+            <p>
+             <strong>CONTACTS</strong><br>
+             <p>
+              Phone: 0721712618 (Dr.Rei Kesis)<br>
+              Email: Chaplaincy@ueab.ac.ke<br>
+              </p>
+            </p> ]]>
+    </string>
+    <string-array name="useful_links">
+        <item>https://www.adventist.org</item>
+        <item>https://www.adventist.org/en/beliefs/</item>
+        <item>http://www.ecd.adventist.org/</item>
+        <item>http://eku.adventist.org/</item>
+        <item>http://ssnet.org/</item>
+        <item>http://www.hopetv.org/</item>
+        <item>http://hck.co.ke/</item>
+        <item>http://www.whiteestate.org/</item>
+        <item>http://church.ueab.ac.ke/</item>
+        <item>http://ueab.ac.ke</item>
+
+    </string-array>
+
+    <string-array name="request_types">
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="request_required_information">
+        <item></item>
+        <item>
+          <![CDATA[
+            <p>
+             <strong>Please include the following information in your request</strong><br>
+              * Your name<br>
+              * The nature of your request
+            </p> ]]>
+        </item>
+
+        <item>
+        <![CDATA[
+        <p>
+        <strong>Please include the following information in your request</strong><br>
+           * Your name<br>
+           * Request Type (in/out)<br>
+           * Previous church<br>
+           * New church<br>
+           * Reason for the request<br>
+        </p> ]]>
+    </item>
+
+        <item>
+        <![CDATA[
+        <p>
+        <strong>Please include the following information in your request</strong><br>
+           * Name of the bride<br>
+           * Name of the bridegroom<br>
+           * Date planned to be wedded<br>
+           * Venue<br>
+           * Facilities needed<br>
+           * Specific request<br>
+        </p> ]]>
+    </item>
+
+        <item>
+        <![CDATA[
+        <p>
+        <strong>Please include the following information in your request</strong><br>
+           * Name of the child<br>
+           * Date of birth<br>
+           * Date on which the child is to be dedicated<br>
+           * Parent\'s names<br>
+           * Any specific requests<br>
+        </p> ]]>
+    </item>
+
+        <item>
+        <![CDATA[
+        <p>
+        <strong>Please include the following information in your request</strong><br>
+           * Your name<br>
+           * Date on which you wish to be baptized
+        </p> ]]>
+    </item>
+        <item>
+          <![CDATA[
+            <p>
+             <strong>Please include the following information in your request</strong><br>
+              * Your name<br>
+              * The nature of your request
+            </p> ]]>
+        </item>
+    </string-array>
+
+    <string name="request_hint">Enter request</string>
+    <string name="request_title">Request title</string>
+    <string name="send_request">Send request</string>
+    <string name="general_request_information_logged_in">"Send requests to the university church. Requests will be under the name "</string>
+    <string name="request_body_error">Request body cannot be empty</string>
+    <string name="login_prompt">You are not logged in</string>
+    <string name="baraton_university_church">BUC</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup_login">No account yet? Create one</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="user_name">User name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="re_enter_password">Re-enter password</string>
+    <string name="create_account">Create account</string>
+    <string name="signup">Signup</string>
+    <string name="send">Send</string>
+    <string name="no_videos">No videos</string>
+    <string name="search_videos">Enter video title</string>
+    <string name="null_video_id">Video id cannot be null</string>
+    <string name="youtube_player_error">Error initializing YouTube player: %s</string>
+    <string name="youtube_video">Video</string>
+    <string name="log_out">Logout</string>
+    <string name="logged_out">You have been logged out</string>
+    <string name="logged_in">Successfully logged in</string>
+    <string name="signup_success">Successfully signed up</string>
+    <string name="no_announcements">No announcements</string>
+    <string name="dummy_long_message">Describe the difference between the economic theory and the behavioral theory of how information systems affect organizations
+discuss how business ecosystems can extend a companys products and services and increase its competitive advantage .Give and example of a business ecosystem for a product or service that yhou are using
+How can managers roles be enhanced with a well-intergrated information system? How can their roles be diminished with poorly-intergrated information system?</string>
+    <string name="message">Message</string>
+    <string name="title_activity_post_announcement">Post announcement</string>
+    <string name="title">Title</string>
+    <string name="post">Request announcement</string>
+    <string name="post_message_error">Message cannot be empty</string>
+    <string name="daily_verse">Daily verse</string>
+    <string name="daily_verse_message">How great you are, Sovereign lord! There is no one like you, and there is no God but you, as we have heard with our own ears</string>
+    <string name="bible_reference">2 Samuel 7:22 - NIV</string>
+    <string name="fetch_verse_error">No daily verse</string>
+    <string name="latest_sermon">Latest sermon</string>
+    <string name="more">More</string>
+    <string name="sermon_title_dummy">That File is a Virus, Delete it</string>
+    <string name="latest_sermon_fetch_error">Error fetching latest sermon</string>
+    <string name="favourite">Favourites</string>
+    <string name="no_favourites">No favourites</string>
+    <string name="title_activity_single_read">ReadActivity</string>
+    <string name="remove">Remove</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="call">Call</string>
+    <string name="location">Location</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="tap_to_refresh">Tap to refresh</string>
+    <string name="error_fetching_data">Error fetching data</string>
+    <string name="welcome_to_baraton_church_app">Welcome to baraton universty church app</string>
+    <string name="welcome">Welcome</string>
+    <string name="chaplain_text">Chaplain</string>
+    <string name="congregant">Congregant</string>
+    <string name="ok">Ok</string>
+    <string name="incorrect_pin">Incorrect pin</string>
+    <string name="error_authenicating">Error authenticating</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_pin">Enter pin</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">Unkown error</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="transfer_type">Transfer type (in/out)</string>
+    <string name="previous_church">Previous church</string>
+    <string name="new_church">New church</string>
+    <string name="reason_for_transfer">Reason for transfer</string>
+    <string name="name_of_child">Name of child (official)</string>
+    <string name="name_of_bride">Name of bride (official)</string>
+    <string name="name_of_bridegroom">Name of bride groom (official)</string>
+    <string name="wedding_date">Wedding date</string>
+    <string name="venue">Venue</string>
+    <string name="facilities_needed">Facilities needed</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="date_of_dedication">Date of dedication</string>
+    <string name="father_name">Father\'s name</string>
+    <string name="mother_name">Mother\'s name</string>
+    <string name="date_of_baptism">Date of baptism</string>
+    <string name="additional_info">Additional information</string>
+    <string name="baptism">Baptism</string>
+    <string name="child_dedication">Child dedication</string>
+    <string name="marriage_solemnization">Marriage solemnization</string>
+    <string name="prayer">Prayer</string>
+    <string name="membership_transfer">Membership transfer</string>
+    <string name="name">Name</string>
+    <string name="sender">Sender</string>
+    <string name="incorrect_values_lenght">Please enter values with length greater than 3</string>
+    <string name="new_request">Create new request</string>
+    <string name="reason_for_rejection">Reason for request rejection</string>
+    <string name="delete">Delete</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="waiting_approval">Waiting for approval</string>
+    <string name="delete_prompt">Are you sure you want to delete the request?</string>
+    <string name="removed_request">Removed request</string>
+    <string name="no_requests">You haven\'t yet submitted any requests</string>
+    <string name="sent">Sent</string>
+    <string name="failed_to_send">Failed to send</string>
+    <string name="announcement">Announcement</string>
+    <string name="chaplain_office">Chaplain</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="requests">Requests</string>
+    <string name="no_reason">No reason</string>
+    <string name="filter">Filter</string>
+    <string name="filter_date">Filter by date</string>
+    <string name="no_requests_chaplain">No requests</string>
+    <string name="clear_requests">Clear requests</string>
+    <string name="clear_announcements">Clear announcements</string>
+    <string name="fetch_blog_error">Error fetching blog</string>
+    <string name="blog">Blog</string>
+    <string name="title_activity_blogs">BlogsActivity</string>
+    <string name="blogs">Blogs</string>
+    <string name="read">Read</string>
+    <string name="login_to_post_requests">Login to post and view requests</string>
+    <string name="login_view_announcement">Login to view announcements</string>
+    <string name="not_logged_in">Login to view and post requests</string>
+</resources>

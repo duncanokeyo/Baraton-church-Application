@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dans.apps.baratonchurch.ReadActivity">
+
+    <item
+        android:id="@+id/useful_links"
+        android:orderInCategory="1"
+        android:title="@string/useful_links"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/about_us"
+        android:orderInCategory="2"
+        android:title="@string/about_us"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="3"
+        android:title="@string/share"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/superpermission"
+        android:orderInCategory="4"
+        android:title="@string/login"
+        app:showAsAction="never"/>
+
+  <!--  <item
+        android:id="@+id/settings"
+        android:orderInCategory="4"
+        android:title="@string/settings"
+        app:showAsAction="never"/>-->
+
+</menu>

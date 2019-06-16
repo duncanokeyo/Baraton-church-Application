@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dans.apps.baratonchurch.widget.ForegroundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:foreground="?selectableItemBackground"
+    android:background="@color/grey50"
+    android:layout_height="90dp">
+    <TextView
+        android:id="@+id/blog_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/deep_blue"
+        android:ellipsize="end"
+        android:fontFamily="@font/opensanslight"
+        android:textSize="17sp"
+        tools:text="Endure Hardship like a good soldier"/>
+    <TextView
+        android:id="@+id/blog_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/opensanslight"
+        tools:text="By dr rei kesis"/>
+    <TextView
+        android:id="@+id/blog_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:fontFamily="@font/opensanslight"
+        tools:text="September 18, 2016"/>
+</com.dans.apps.baratonchurch.widget.ForegroundLinearLayout>

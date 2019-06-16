@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dans.apps.baratonchurch.ReadActivity">
+
+    <item
+        android:id="@+id/close"
+        android:orderInCategory="1"
+        android:icon="@drawable/close"
+        android:title="@string/close"
+        app:showAsAction="always"/>
+</menu>

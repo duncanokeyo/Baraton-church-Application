@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dans.apps.baratonchurch.BlogReadActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        android:background="?colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/blog_title"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/opensanslight"
+        android:layout_height="wrap_content"
+        tools:text="The love of jesus christ"
+        android:padding="10dp" />
+    <com.dans.apps.baratonchurch.widget.ReadView
+        android:id="@+id/blog_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.dans.apps.baratonchurch.widget.ReadView>
+</LinearLayout>

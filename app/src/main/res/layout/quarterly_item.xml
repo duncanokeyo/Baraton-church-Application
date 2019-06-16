@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dans.apps.baratonchurch.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:background="@color/grey50"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_height="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/favourites_lesson_cover"
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey200" />
+
+    <TextView
+        android:id="@+id/favourite_reading_title"
+        android:layout_width="wrap_content"
+        android:textSize="17sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/favourite_reading_lesson_title"
+        android:layout_alignStart="@+id/favourite_reading_lesson_title"
+        android:layout_centerVertical="true"
+        tools:text="@string/title_dummy_data" />
+
+    <TextView
+        android:id="@+id/favourite_reading_lesson_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/favourites_lesson_cover"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/favourites_lesson_cover"
+        android:layout_toRightOf="@+id/favourites_lesson_cover"
+        tools:text="@string/date_dummy_data" />
+
+  <!--  <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quarterly_cover"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:tint="@color/grey400"
+        app:srcCompat="@drawable/favorite_white" />-->
+
+</com.dans.apps.baratonchurch.widget.ForegroundRelativeLayout>

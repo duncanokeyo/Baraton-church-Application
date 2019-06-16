@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="1"
+        android:title="@string/filter"
+        android:icon="@drawable/filter"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_calender"
+        android:orderInCategory="2"
+        android:title="@string/filter_date"
+        android:icon="@drawable/calendar"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="3"
+        android:title="@string/clear_requests"
+        app:showAsAction="never"/>
+</menu>

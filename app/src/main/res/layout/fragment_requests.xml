@@ -1,0 +1,355 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    android:gravity="bottom"
+    app:umanoDragView="@+id/report_view_head"
+    app:umanoPanelHeight="?actionBarSize">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/requests"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            tools:text="You have not submitted any requests yet" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/request_view_head"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/grey50"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/new_request"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/panel_state_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/less" />
+        </FrameLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_margin"
+            android:fillViewport="true"
+            tools:context="com.dans.apps.baratonchurch.ui.RequestFragment">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <TextView
+                    android:id="@+id/pick_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="20dp"
+                    android:text="@string/pick_request"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/pick_request"
+                    android:entries="@array/request_types" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/entry_fields_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/grey50"
+                    app:cardElevation="4dp"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/request_title_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/request_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/title" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/sender_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/sender" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/transfer_type_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/transfer_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/transfer_type" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/previous_church_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/previous_church"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/previous_church" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/new_church_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/new_church"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/new_church" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/reason_for_transfer_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/reason_for_transfer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/reason_for_transfer" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/name_of_bride_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/name_of_bride"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/name_of_bride" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/name_of_bridegroom_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/name_of_bridegroom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/name_of_bridegroom" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/wedding_date_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/wedding_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/wedding_date" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/venue_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/venue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/venue" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/facilities_needed_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/facilities_needed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/facilities_needed" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/name_of_child_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/name_of_child"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/name_of_child" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/date_of_birth_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/date_of_birth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/date_of_birth" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/date_of_dedication_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/date_of_dedication"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/date_of_dedication" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/father_name_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/father_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/father_name" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/mother_name_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/mother_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/mother_name" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/date_of_baptism_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/date_of_baptism"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/date_of_baptism" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/additional_info_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/additional_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/additional_info" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/send_request"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@color/deep_blue"
+                            android:text="@string/send"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

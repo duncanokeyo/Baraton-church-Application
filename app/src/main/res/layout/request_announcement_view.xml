@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#FFF"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/createdAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/opensanslight"
+            android:maxLines="1"
+            android:textColor="@color/deep_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="20th October 2018" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/opensanslight"
+            android:maxLines="3"
+            android:textColor="@color/deep_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Request to join church membership" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey300" />
+
+        <com.dans.apps.baratonchurch.widget.ExpandableTextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/opensanslight"
+            android:maxLines="6"
+            tools:text="I would really love to join  your church" />
+
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sender"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/opensanslight"
+                android:textSize="12sp"
+                android:textColor="@color/deep_blue"
+                android:textStyle="italic"
+                android:visibility="visible"
+                tools:text="Okeyo duncan odhiambo" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/more_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/status_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/status_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/approved" />
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/opensanslight"
+                android:maxLines="3"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                tools:text="approved" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/request_actions_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/approve"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/approved" />
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:text="@string/reject"
+                android:drawableLeft="@drawable/rejected" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

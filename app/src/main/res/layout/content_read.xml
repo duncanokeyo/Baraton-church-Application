@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dans.apps.baratonchurch.ReadActivity"
+    tools:showIn="@layout/activity_read">
+
+    <fragment
+        android:id="@+id/read_fragment"
+        android:name="com.dans.apps.baratonchurch.ui.ReadFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/days_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:indeterminateTint="?android:colorAccent"
+        android:indeterminateTintMode="src_in" />
+
+    <TextView
+        android:id="@+id/days_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/days_fetch_error"
+        android:textSize="27sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/days_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/days_message"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="6dp"
+        android:text="@string/retry" />
+</RelativeLayout>

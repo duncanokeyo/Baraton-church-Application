@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dans.apps.baratonchurch.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/grey50"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_height="85dp">
+
+    <TextView
+        android:id="@+id/lesson_number"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/favourite_reading_lesson_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/lesson_number"
+        android:layout_toRightOf="@+id/lesson_number"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Overcoming Evil With Good"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lesson_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/favourite_reading_lesson_title"
+        android:layout_alignParentBottom="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_alignStart="@+id/favourite_reading_lesson_title"
+        android:textColor="@color/grey400"
+        android:text="TextView" />
+</com.dans.apps.baratonchurch.widget.ForegroundRelativeLayout>

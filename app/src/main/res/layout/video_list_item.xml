@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dans.apps.baratonchurch.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
+    android:layout_width="match_parent"
+    android:background="@color/grey50"
+    android:foreground="?selectableItemBackground"
+    android:layout_height="110dp">
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/video_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/grey200" />
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/play" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/published_at"
+        android:layout_alignStart="@+id/published_at"
+        android:layout_centerVertical="true"
+        android:maxLines="3"
+        android:text="Family and marriage   Pr  Peter Kesis"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/published_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:layout_toLeftOf="@+id/favourite_video"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toStartOf="@+id/favourite_video"
+        android:ellipsize="end"
+        android:text="2017-11-30T18:53:21.000Z,gertgertetetetet"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/favourite_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/published_at"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:tint="@color/grey400"
+        android:visibility="gone"
+        app:srcCompat="@drawable/favorite_white" />
+
+    <ImageView
+        android:id="@+id/video_overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentTop="true"
+        android:tint="@color/grey600"
+        app:srcCompat="@drawable/overflow" />
+
+</com.dans.apps.baratonchurch.widget.ForegroundRelativeLayout>

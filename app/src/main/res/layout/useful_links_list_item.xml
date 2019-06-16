@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dans.apps.baratonchurch.widget.ForegroundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey50"
+    android:foreground="?selectableItemBackground"
+    android:stateListAnimator="@animator/raise"
+    android:elevation="4dp"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/link"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:textSize="17sp"
+        android:autoLink="web"
+        android:text="http://www.google.com" />
+</com.dans.apps.baratonchurch.widget.ForegroundLinearLayout>

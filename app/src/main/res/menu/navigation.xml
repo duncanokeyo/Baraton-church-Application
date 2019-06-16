@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/announcement"
+        android:icon="@drawable/announcement"
+        android:title="@string/announcements" />
+    <item
+        android:id="@+id/quarterlies"
+        android:icon="@drawable/quarterlies"
+        android:title="@string/quarterlies" />
+    <item
+        android:id="@+id/request"
+        android:icon="@drawable/request"
+        android:title="@string/my_requests" />
+    <item
+        android:id="@+id/sermon"
+        android:icon="@drawable/multimedia"
+        android:title="@string/sermon" />
+
+</menu>

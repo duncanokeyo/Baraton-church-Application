@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dans.apps.baratonchurch.ui.ReadFragment">
+
+    <com.dans.apps.baratonchurch.widget.ReadView
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateTint="?android:colorAccent"
+        android:indeterminateTintMode="src_in" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="27sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="@string/retry" />
+
+</RelativeLayout>
+

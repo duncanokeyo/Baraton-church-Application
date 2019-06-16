@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dans.apps.baratonchurch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <application
+        android:name=".BUCApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LessonsActivity"
+            android:label="@string/title_activity_lessons"
+            android:parentActivityName=".BaseActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ReadActivity"
+            android:parentActivityName=".ReadActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".YoutubeAcitivity"
+            android:label="@string/youtube_video"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".SingleReadActivity"
+            android:label="@string/title_activity_single_read"
+            android:parentActivityName=".BaseActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".BaseActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UsefulLinksActivity"
+            android:label="@string/useful_links"
+            android:parentActivityName=".BaseActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BlogReadActivity"
+            android:label="@string/blog"
+            android:parentActivityName=".BaseActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".BlogsActivity"
+            android:parentActivityName=".BaseActivity"
+            android:label="@string/blogs"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <provider
+            android:name=".provider.Provider"
+            android:authorities="@string/authority"
+            android:exported="false"
+            android:syncable="true" />
+
+        <service
+            android:name=".service.SabbathSchoolFetcherService"
+            android:exported="false" />
+    </application>
+
+</manifest>
